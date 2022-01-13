@@ -76,47 +76,20 @@
            
          </ul>
        </div>
-       <div class="resume_item resume_social">
+       <div class="resume_item resume_lang">
          <div class="title">
            <p class="bold">Langueges</p>
          </div>
          <ul>
-           <li>
-             <div class="icon">
-               <i class="fab fa-facebook-square"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Facebook</p>
-               <p>Stephen@facebook</p>
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-twitter-square"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Twitter</p>
-               <p>Stephen@twitter</p>
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-youtube"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Youtube</p>
-               <p>Stephen@youtube</p>
-             </div>
-           </li>
-           <li>
-             <div class="icon">
-               <i class="fab fa-linkedin"></i>
-             </div>
-             <div class="data">
-               <p class="semi-bold">Linkedin</p>
-               <p>Stephen@linkedin</p>
-             </div>
-           </li>
+          <li v-for="(data,key) in Languege['lang']" key="key">
+            <div class="lang_name">
+              {{data}}
+            </div>
+            <div class="lang_progress">
+              <span :style="'width : '+Languege['proficiency'][key]+'%'"></span>
+            </div>
+            <div class="lang_per">{{Languege['proficiency'][key]}}%</div>
+          </li>
          </ul>
        </div>
      </div>
@@ -157,15 +130,27 @@
             </li>
         </ul>
     </div>
+    <div class="resume_item resume_github">
+      <div class="title">
+           <p class="bold">Github Work</p>
+         </div>
+      <ul>
+            <li v-for="(name, index) in GithubWork['name']" key="index">
+                <div class="date">{{GithubWork['name'][index]}}&nbsp;&nbsp;&nbsp;<i class="fas fa-star icon_color"></i>{{GithubWork['star'][index]}} --{{GithubWork['lang'][index]}}</div> 
+                <div class="info">
+                     <p class="semi-bold">{{GithubWork['abstract'][index]}}</p> 
+                </div>
+            </li>
+        </ul>
+    </div>
     <div class="resume_item resume_hobby">
       <div class="title">
            <p class="bold">Hobby</p>
          </div>
        <ul>
-         <li><i class="fas fa-book"></i></li>
-         <li><i class="fas fa-gamepad"></i></li>
-         <li><i class="fas fa-music"></i></li>
-         <li><i class="fab fa-pagelines"></i></li>
+         <li v-for="hobby in Hobby">
+           {{hobby}}
+         </li>
       </ul>
     </div>
   </div>

@@ -7,6 +7,8 @@ var PersonalInfo = {
     "blog":"www.sci.ci",//if dont have, let it empty
 }
 
+var aboutMe="A"
+
 var Education = {
     "institution":["RWTH Aachen University","China University of Petroleum (East China)"],
     "location":["Aachen, Germany","Qingdao, China"],
@@ -22,25 +24,30 @@ var WorkExperience = {
     "position":["Car Repair Assistant","Safety Inspection Assistant"],
     "highlight":["",""],
 }
-var Program = {
-    "name":[]
+var GithubWork = {
+    "name":["OneindexN","getLernraumPlatz","SpiderPlayer","SmartMailbox"],
+    "abstract":["A alternative web page for Microsoft onedrive used to show personal cloud disk content.","A Program used to rush the reservation in RWTH booking site of study room in a short time","A web music player. Music sources are obtained from Youtube, Bilibili and QQ Music through web crawler","A gadget made with arduino, accelerometer, wifi module, with which a message will be sent to phone when there's a new letter into mailbox."],
+    "star":['64',"6","4","0"],
+    "lang":["PHP","Python","Python","C"]
 }
 
 var Skills = {
-    "skill":["Python","Java","C/C++","JS","HTML","CSS"],
-    "proficiency":["90","85","80","70","60","60"]
+    "skill":["Python","Java","C/C++","JS","HTML","CSS","PHP"],
+    "proficiency":["90","85","80","70","60","60","60"]
 }
 
 var Languege={
     "lang":["English","German"],
     "proficiency":["70","60"]
 }
+var Hobby=["Ski","Badminton","Game","Programming"]
 
 vm1 = new Vue({
     el: "#resume_left",
     data: {
       PersonalInfo: PersonalInfo,
       Skills: Skills,
+      Languege:Languege
     },
   });
 
@@ -49,5 +56,7 @@ vm1 = new Vue({
     data: {
         WorkExperience: WorkExperience,
         Education: Education,
+        GithubWork:GithubWork,
+        Hobby:Hobby
     },
   });
