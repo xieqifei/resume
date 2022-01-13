@@ -137,6 +137,7 @@ body {
   width: 15%;
 }
 
+.resume .resume_left .resume_lang ul li .lang_progress span,
 .resume .resume_left .resume_skills ul li .skill_progress span {
   position: absolute;
   top: 0;
