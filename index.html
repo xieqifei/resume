@@ -17,6 +17,14 @@
        <img src="https://i.imgur.com/eCijVBe.png" alt="profile_pic">
      </div>
      <div class="resume_content" id="resume_left">
+       <div class="resume_item resume_aboutme">
+         <div class="title">
+           <p class="bold">
+             ABOUT ME
+           </p>
+           <p class="aboutme">{{aboutMe}}</p>
+         </div>
+       </div>
        <div class="resume_item resume_info">
          <div class="title">
            <p class="bold">{{ PersonalInfo['name'] }}</p>
@@ -92,15 +100,19 @@
           </li>
          </ul>
        </div>
+       <div class="resume_item resume_hobby">
+        <div class="title">
+             <p class="bold">Hobby</p>
+           </div>
+         <ul>
+           <li v-for="hobby in Hobby">
+             {{hobby}}
+           </li>
+        </ul>
+      </div>
      </div>
   </div>
   <div class="resume_right" id="resume_right">
-    <div class="resume_item resume_about">
-        <div class="title">
-           <p class="bold">About me</p>
-         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam atque exercitationem inventore repudiandae?</p>
-    </div>
     <div class="resume_item resume_work">
         <div class="title">
            <p class="bold">Work Experience</p>
@@ -143,16 +155,7 @@
             </li>
         </ul>
     </div>
-    <div class="resume_item resume_hobby">
-      <div class="title">
-           <p class="bold">Hobby</p>
-         </div>
-       <ul>
-         <li v-for="hobby in Hobby">
-           {{hobby}}
-         </li>
-      </ul>
-    </div>
+    
   </div>
 </div>
 <script src="script.js"></script>

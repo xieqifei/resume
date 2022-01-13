@@ -7,7 +7,7 @@ var PersonalInfo = {
     "blog":"www.sci.ci",//if dont have, let it empty
 }
 
-var aboutMe="A"
+var aboutMe="A good man with a good apperance."
 
 var Education = {
     "institution":["RWTH Aachen University","China University of Petroleum (East China)"],
@@ -45,6 +45,7 @@ var Hobby=["Ski","Badminton","Game","Programming"]
 vm1 = new Vue({
     el: "#resume_left",
     data: {
+      aboutMe:aboutMe,
       PersonalInfo: PersonalInfo,
       Skills: Skills,
       Languege:Languege

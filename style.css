@@ -98,8 +98,7 @@ body {
   position: relative;
 }
 
-.resume .icon i,
-.resume .resume_right .resume_hobby ul li i {
+.resume .icon i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -107,6 +106,9 @@ body {
 }
 
 .resume .resume_left ul li .data {
+  color: #b1eaff;
+}
+.resume .resume_left .resume_aboutme .aboutme {
   color: #b1eaff;
 }
 .resume .resume_left .resume_lang ul li,
@@ -214,19 +216,15 @@ body {
   background: #0bb5f4;
 }
 
-.resume .resume_right .resume_hobby ul {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
+.resume .resume_left .resume_hobby ul {
+  
 }
 
-.resume .resume_right .resume_hobby ul li {
-  width: auto;
-  height: 80px;
-  position: relative;
-  color: gray;
-  font-size: medium;
-  font-weight: bold;
+.resume .resume_left .resume_hobby ul li {
+  /* margin-top: 0px; */
+  /* position: relative; */
+  color: #b1eaff;
+  /* font-size: medium; */
 }
 
 
