@@ -216,15 +216,9 @@ body {
   background: #0bb5f4;
 }
 
-.resume .resume_left .resume_hobby ul {
-  
-}
-
-.resume .resume_left .resume_hobby ul li {
-  /* margin-top: 0px; */
-  /* position: relative; */
+.resume .resume_left .resume_hobby .hobby {
   color: #b1eaff;
-  /* font-size: medium; */
+  margin-right: 20px;
 }
 
 

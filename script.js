@@ -40,7 +40,7 @@ var Languege={
     "lang":["English","German"],
     "proficiency":["70","60"]
 }
-var Hobby=["Ski","Badminton","Game","Programming"]
+var Hobby="Ski, Badminton, Game, Programming"
 
 vm1 = new Vue({
     el: "#resume_left",
